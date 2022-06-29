@@ -1,3 +1,7 @@
+* {
+    font-family:'Roboto',sans-serif;
+}
+
 body {
     display: flex;
     flex-flow: column wrap;
@@ -11,29 +15,35 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #1F2937;
     padding: 5px 80px
 }
 
-/*first body*/
+
+/*first body WORK ON THIS LATER */
 
 .first_body {
     background-color: #1F2937;
-    color: #f9faf8;
-    padding: 80px 400px;
+    height: 300px;
     display: flex;
-    justify-content: right;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
 }
 
 .first_body .left {
-    flex: 1 0 0;
+    flex: 0 1 auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: left;
 }
 
 .first_body .right {
     background-color: #E5E7EB;
     height: 150px;
-    flex: 1 0 0;
+    padding: 0px 15px;
+    flex: 0 1 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,7 +56,7 @@ body {
     flex-flow: column wrap;
     align-items: center;
     justify-content: start;
-    padding: 80px 150px;header
+    padding: 80px 150px;
 }
 
 .container_info {
@@ -116,3 +126,45 @@ a {
     font-size: 18px;
 }
 
+.first_header, .company_name {
+    color: #f9faf8
+}
+
+.second_header, .quote {
+    color: #1F2937;
+    font-size: 36px;
+}
+
+.quote { /* idk how to make this work tbh how do u get light italic*/
+    font-style: italic;
+    font-weight: lighter;
+}
+
+/*first body*/
+
+.first_header {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.first_body .subtext {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+button {
+    all: unset;
+    background-color: #3882F6;
+    color: #f9faf8;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    outline: 5px solid #ff5580;
+
+}
