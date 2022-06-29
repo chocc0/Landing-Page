@@ -64,7 +64,6 @@ body {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    justify-content: start;
     padding: 80px 150px;
     gap: 30px;
 }
@@ -72,6 +71,7 @@ body {
 .container_info {
     display: flex;
     gap: 10px;
+    align-items: start;
 }
 
 .info {
@@ -80,14 +80,15 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 15px;
+    gap: 30px;
+    width: 250px;
 }
 
 /*third_body or the quote body*/
 
 .third_body {
     background-color: #E5E7EB;
-    padding: 80px 400px;
+    padding: 80px 250px;
     display: flex;
     flex-direction: column;
     align-items: start;
