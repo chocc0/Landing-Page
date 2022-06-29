@@ -57,10 +57,12 @@ body {
     align-items: center;
     justify-content: start;
     padding: 80px 150px;
+    gap: 30px;
 }
 
 .container_info {
     display: flex;
+    gap: 10px;
 }
 
 .info {
@@ -69,6 +71,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    gap: 15px;
 }
 
 /*third_body or the quote body*/
@@ -88,18 +91,29 @@ body {
     display: flex;
     justify-content: center;
     align-items: stretch;
-    padding: 50px 70px
+    padding: 50px 175px
 }
 
 .action {
-    background-color: #3882F6;
+    background-color: #ff5580;
+    border-radius: 5px;
     height: 100px;
-    flex: 1;
+    padding: 0px 75px;
+    flex: 1 0 auto;
+    gap: 50px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    color: white;
 }
+
+.call_to {
+    color: #f9faf8
+}
+
+.action .subtext {
+    color: #ececec;
+}
+
 
 /*footer*/
 
@@ -110,7 +124,7 @@ body {
     background: #1F2937;
     color: #E5E7EB;
     font-size: 18px;
-    padding: 50px 0px;
+    padding: 45px 0px;
 }
 
 /*minor details, i.e. ul a button, etc. w/ no effect on rest of code */
@@ -135,6 +149,10 @@ a {
     font-size: 36px;
 }
 
+.second_header {
+    font-weight: bold;
+}
+
 .quote { /* idk how to make this work tbh how do u get light italic*/
     font-style: italic;
     font-weight: lighter;
@@ -154,10 +172,12 @@ a {
 
 button {
     all: unset;
-    background-color: #3882F6;
+    background-color: #ff5580;
     color: #f9faf8;
-    padding: 5px;
+    padding: 5px 15px;
     border-radius: 5px;
+    outline: 1px solid #f9faf8;
+    font-size: 12px;
 }
 
 img {
@@ -167,4 +187,8 @@ img {
     border-radius: 5px;
     outline: 5px solid #ff5580;
 
+}
+
+.call_to {
+    font-weight: bold;
 }
